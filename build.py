@@ -667,6 +667,12 @@ def build() -> None:
         if asset_file.is_file():
             shutil.copy2(asset_file, dist_assets / asset_file.name)
 
+    # Ensure favicon.ico is also available at domain root
+    root_ico = ROOT / "assets" / "favicon.ico"
+    if root_ico.exists():
+        shutil.copy2(root_ico, DIST_DIR / "favicon.ico")
+        shutil.copy2(root_ico, ROOT / "favicon.ico")
+
     # 1. Render standard page templates (skipping _*.html partials)
     for tpl_path in TEMPLATES_DIR.rglob("*.html"):
         if tpl_path.name.startswith("_"):
