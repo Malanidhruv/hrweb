@@ -464,6 +464,10 @@ def write_out(rel_path: Path, content: str) -> None:
     out_dist.parent.mkdir(parents=True, exist_ok=True)
     out_dist.write_text(content, encoding="utf-8")
 
+    out_root = ROOT / rel_path
+    out_root.parent.mkdir(parents=True, exist_ok=True)
+    out_root.write_text(content, encoding="utf-8")
+
 
 def build() -> None:
     site = load_json("site.json")
@@ -677,6 +681,7 @@ def build() -> None:
     root_ico = ROOT / "assets" / "favicon.ico"
     if root_ico.exists():
         shutil.copy2(root_ico, DIST_DIR / "favicon.ico")
+        shutil.copy2(root_ico, ROOT / "favicon.ico")
 
     # 1. Render standard page templates (skipping _*.html partials)
     for tpl_path in TEMPLATES_DIR.rglob("*.html"):
@@ -880,8 +885,9 @@ def build() -> None:
     )
     write_out(Path("_headers"), headers_txt)
 
-    # CNAME for GitHub Pages custom domain
-    write_out(Path("CNAME"), "harionresearch.co.in\n")
+    # CNAME and .nojekyll for GitHub Pages custom domain
+    write_out(Path("CNAME"), "www.harionresearch.co.in")
+    write_out(Path(".nojekyll"), "")
 
     print(f"Build complete: {len(canonical_paths)} canonical pages generated in dist/.")
 
