@@ -886,7 +886,7 @@ def build() -> None:
     write_out(Path("_headers"), headers_txt)
 
     # CNAME and .nojekyll for GitHub Pages custom domain
-    write_out(Path("CNAME"), "www.harionresearch.co.in")
+    write_out(Path("CNAME"), "harionresearch.co.in")
     write_out(Path(".nojekyll"), "")
 
     print(f"Build complete: {len(canonical_paths)} canonical pages generated in dist/.")
