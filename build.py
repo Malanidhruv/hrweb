@@ -93,14 +93,16 @@ def render_header(site: dict, active_path: str = "/") -> str:
         ("/", "Home"),
         ("/equity-research-internship/", "Internship"),
         ("/screener/", "Screener"),
-        ("/careers/", "Careers"),
         ("/blog/", "Blog"),
         ("/about/", "About"),
+        ("/contact/", "Contact"),
     ]
     links_html = []
     for href, label in nav_items:
         if href == "/":
             is_active = active_path == "/"
+        elif href == "/blog/":
+            is_active = active_path.startswith("/blog/") or active_path.startswith("/careers/")
         else:
             is_active = active_path == href or (href != "/" and active_path.startswith(href))
         current = ' aria-current="page"' if is_active else ""
@@ -861,6 +863,7 @@ def build() -> None:
         "/portfolio-manager-internship/* /other-programs/#portfolio-manager 301\n"
         "/nism-series-viii-course/* /other-programs/#nism-series-viii 301\n"
         "/proficient-trading-program/* /other-programs/ 301\n"
+        "/blog/careers-in-finance/* /careers/ 301\n"
     )
     write_out(Path("_redirects"), redirects_txt)
 
