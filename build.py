@@ -141,7 +141,7 @@ def render_footer(site: dict) -> str:
     prog_name = prog.get("name", "Equity Research Internship Program")
     prog_dur = tbc(prog.get("duration", ""))
     prog_price = tbc(prog.get("price", ""))
-    screener_url = site.get("screener", {}).get("url", "https://learninglab.streamlit.app/")
+    screener_url = site.get("screener", {}).get("url", "https://screener.harionresearch.co.in/")
 
     return (
         '<footer class="site-footer">'
@@ -502,7 +502,7 @@ def build() -> None:
     org_schema = build_schema_org(site)
     prog = site.get("program", {})
     ent = site.get("entity", {})
-    screener_url = site.get("screener", {}).get("url", "https://learninglab.streamlit.app/")
+    screener_url = site.get("screener", {}).get("url", "https://screener.harionresearch.co.in/")
 
     schema_home = json.dumps(
         [

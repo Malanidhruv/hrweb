@@ -19,7 +19,7 @@
     "enroll_url": "https://forms.gle/W7Z35ztDgFDvcWj87"
   },
   "screener": {
-    "url": "https://learninglab.streamlit.app/",
+    "url": "https://screener.harionresearch.co.in/",
     "universe_size": "NSE & BSE (8 Universes)",
     "fundamental_data_source": "Reported corporate filings and delayed End-of-Day (EOD) exchange data, updated daily after market close",
     "fundamental_filters": [
