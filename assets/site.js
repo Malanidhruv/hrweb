@@ -48,7 +48,7 @@
     }
   });
 
-  // Contact form basic client-side validation & honeypot check
+  // Contact form basic client-side validation, honeypot check & mailto fallback
   var form = document.querySelector('form[data-contact-form]');
   if (form) {
     form.addEventListener('submit', function (e) {
@@ -56,6 +56,17 @@
       if (hp && hp.value) {
         e.preventDefault();
         return;
+      }
+      var action = form.getAttribute('action') || '';
+      var hasKey = form.querySelector('input[name="access_key"]');
+      if (action.indexOf('web3forms.com') !== -1 && !hasKey) {
+        e.preventDefault();
+        var name = (form.querySelector('[name="name"]') || {}).value || '';
+        var email = (form.querySelector('[name="email"]') || {}).value || '';
+        var subject = (form.querySelector('[name="subject"]') || {}).value || 'Website Enquiry';
+        var message = (form.querySelector('[name="message"]') || {}).value || '';
+        var body = 'Name: ' + name + '\nEmail: ' + email + '\n\n' + message;
+        window.location.href = 'mailto:info@harionresearch.co.in?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
       }
     });
   }
