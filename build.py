@@ -880,6 +880,9 @@ def build() -> None:
     )
     write_out(Path("_headers"), headers_txt)
 
+    # CNAME for GitHub Pages custom domain
+    write_out(Path("CNAME"), "harionresearch.co.in\n")
+
     print(f"Build complete: {len(canonical_paths)} canonical pages generated in dist/.")
 
 
