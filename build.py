@@ -464,10 +464,6 @@ def write_out(rel_path: Path, content: str) -> None:
     out_dist.parent.mkdir(parents=True, exist_ok=True)
     out_dist.write_text(content, encoding="utf-8")
 
-    out_root = ROOT / rel_path
-    out_root.parent.mkdir(parents=True, exist_ok=True)
-    out_root.write_text(content, encoding="utf-8")
-
 
 def build() -> None:
     site = load_json("site.json")
@@ -681,7 +677,6 @@ def build() -> None:
     root_ico = ROOT / "assets" / "favicon.ico"
     if root_ico.exists():
         shutil.copy2(root_ico, DIST_DIR / "favicon.ico")
-        shutil.copy2(root_ico, ROOT / "favicon.ico")
 
     # 1. Render standard page templates (skipping _*.html partials)
     for tpl_path in TEMPLATES_DIR.rglob("*.html"):
