@@ -1,0 +1,91 @@
+{
+  "reports": [
+    {
+      "slug": "indian-it-services-sector-margin-and-cashflow-study",
+      "title": "Indian IT Services: Studying Operating Margins, Deal Mix and Cash Conversion",
+      "date": "2026-10-15",
+      "tag": "Sector Case Study · IT Services",
+      "author": "Harion Research Learning Lab (Mentor-Reviewed Sample)",
+      "positions": "No position disclosed. Prepared strictly as an educational template.",
+      "summary": "An educational case study demonstrating how analysts compare employee utilization, attrition, subcontracting costs, and free-cash-flow conversion across large-cap and mid-cap Indian IT services companies.",
+      "sections": [
+        {
+          "heading": "1. Purpose of this learning report",
+          "body": "This educational case study illustrates how participants in the Harion Equity Research Internship Program structure a sector-level financial comparison. Rather than forecasting share prices or issuing recommendations, a sector study begins by identifying the core operating drivers that explain why two companies in the same industry earn different returns on capital."
+        },
+        {
+          "heading": "2. Business model & revenue drivers",
+          "body": "Indian IT services companies generate revenue primarily through time-and-materials (T&M) and fixed-price contracts across banking, retail, manufacturing, and healthcare verticals. When reading annual reports in this sector, analysts track billable headcount, offshore-to-onsite revenue mix, client concentration buckets ($10M+, $50M+, $100M+ accounts), and constant-currency revenue growth."
+        },
+        {
+          "heading": "3. Financial statement & ratio comparison",
+          "body": "In the Harion Research Scanner, IT services firms frequently screen with low balance-sheet leverage (minimal Debt-to-Equity) and high Return on Capital Employed (ROCE) because physical capital intensity is low. The analytical differentiator lies in Operating Profit Margin (OPM %) stability and the ratio of Operating Cash Flow (OCF) to EBITDA, which reveals how effectively billed revenue converts into cash after working-capital changes (unbilled receivables and debtor days)."
+        },
+        {
+          "heading": "4. Valuation context & historical multiples",
+          "body": "Analysts compare trailing Price-to-Earnings (P/E) and EV/EBITDA multiples against 5-year historical medians and against reported revenue growth rates. A higher multiple in historical data often reflects lower client concentration risk and higher cash payout ratios (dividends and buybacks), whereas compressed multiples frequently coincide with margin headwinds or vertical-specific slowdowns."
+        },
+        {
+          "heading": "5. Key risks & analytical limitations",
+          "body": "Key variables that can alter historical trajectories include foreign-exchange fluctuations (USD/INR, EUR/INR), visa and onsite regulatory changes, client insourcing via Global Capability Centres (GCCs), and technological shifts in enterprise software delivery. All figures studied in the Learning Lab rely on delayed reported filings and must be verified against official exchange disclosures."
+        }
+      ],
+      "seo_title": "Indian IT Services Margin & Cash Study | Harion Research",
+      "meta_desc": "Educational case study comparing utilization, operating margins and cash-flow conversion across Indian IT services companies."
+    },
+    {
+      "slug": "working-capital-and-roce-in-indian-manufacturing",
+      "title": "Working Capital Cycles and ROCE Decomposition in Indian Manufacturing",
+      "date": "2026-09-28",
+      "tag": "Financial Statement Study · Industrials",
+      "author": "Harion Research Learning Lab (Mentor-Reviewed Sample)",
+      "positions": "No position disclosed. Prepared strictly as an educational template.",
+      "summary": "How to decompose Return on Capital Employed (ROCE) into asset turnover and operating margin, and how inventory and receivable days impact cash flow in capital-intensive businesses.",
+      "sections": [
+        {
+          "heading": "1. DuPont decomposition on reported filings",
+          "body": "Two manufacturing companies can report the exact same 18% Return on Capital Employed (ROCE) through completely different economic models. One may operate with high gross margins and slow asset turnover (specialized industrial equipment), while another operates on thin margins with rapid inventory turnover (consumables and light engineering). Separating EBIT margin from capital-employed turnover is the first step in financial modelling."
+        },
+        {
+          "heading": "2. Reading the cash conversion cycle",
+          "body": "Reported net profit on the income statement does not pay for capacity expansion; cash flow from operations does. By calculating Inventory Days, Trade Receivable Days, and Trade Payable Days across 5 years of annual reports, interns learn to spot whether revenue growth is accompanied by healthy cash collection or by stretching channel credit."
+        },
+        {
+          "heading": "3. Combining fundamental and price-structure lenses",
+          "body": "In the Market Analysis Learning Lab, learners observe how multi-year changes in balance-sheet debt and capital work-in-progress (CWIP) interact with long-term market structure. When new plant capacity is commissioned, depreciation and interest expenses rise immediately while utilization ramps gradually—an accounting dynamic that purely price-based or purely single-period ratio screens can miss if studied in isolation."
+        },
+        {
+          "heading": "4. Limitations & verification checklist",
+          "body": "Consolidated vs. standalone statements, accounting policy changes in inventory valuation (FIFO vs. weighted average), and related-party transactions require reading the Notes to Accounts in the full annual report. Screeners help narrow a universe of stocks; primary filings provide the context."
+        }
+      ],
+      "seo_title": "Working Capital & ROCE in Manufacturing | Harion Research",
+      "meta_desc": "How to decompose Return on Capital Employed (ROCE) and analyze inventory and receivable days in Indian manufacturing businesses."
+    },
+    {
+      "slug": "reading-leverage-and-interest-coverage-across-cycles",
+      "title": "Evaluating Balance-Sheet Leverage and Interest Coverage Across Market Phases",
+      "date": "2026-09-10",
+      "tag": "Risk Framework · Cross-Sector",
+      "author": "Harion Research Learning Lab (Mentor-Reviewed Sample)",
+      "positions": "No position disclosed. Prepared strictly as an educational template.",
+      "summary": "A structured framework for studying Debt-to-Equity, Interest Coverage, and debt-maturity schedules when screening NSE and BSE universes.",
+      "sections": [
+        {
+          "heading": "1. Why risk-first thinking starts on the balance sheet",
+          "body": "Earnings fluctuate with industry cycles, but debt obligations remain fixed. In our research methodology, solvency and liquidity ratios are examined before valuation multiples so that analysts understand a business's downside resilience before studying its growth potential."
+        },
+        {
+          "heading": "2. Beyond headline Debt-to-Equity",
+          "body": "A low Debt-to-Equity ratio at the peak of an earnings cycle can still mask vulnerability if operating margins mean-revert. Comparing Total Debt to 5-year average Operating Cash Flow and tracking the Interest Coverage Ratio (EBIT / Finance Costs) across both expansionary and contractionary years gives a clearer view of balance-sheet durability."
+        },
+        {
+          "heading": "3. Case-study application in the Research Scanner",
+          "body": "Using the Research Scanner's Financial Ratio Study module, students compare companies within the same BSE or NSE capitalization segment by pairing Debt-to-Equity filters with Operating Profit Margin stability. This exercise demonstrates how financial leverage amplifies both return on equity during up-cycles and drawdowns during downturns."
+        }
+      ],
+      "seo_title": "Balance-Sheet Leverage & Coverage Study | Harion Research",
+      "meta_desc": "Structured framework for studying Debt-to-Equity, Interest Coverage and debt-maturity schedules across NSE and BSE universes."
+    }
+  ]
+}

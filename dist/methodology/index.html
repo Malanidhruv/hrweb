@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Research &amp; Scanner Methodology | Harion Research</title>
+  <meta name="description" content="How Harion Research analyses listed Indian companies and how the Market Analysis Learning Lab computes price, volume and fundamental ratio filters.">
+  <link rel="canonical" href="https://harionresearch.co.in/methodology/">
+  <meta property="og:title" content="Research &amp; Scanner Methodology | Harion Research">
+  <meta property="og:description" content="Universe construction, price/volume and fundamental ratio filter definitions, financial statement workflow, valuation logic and limitations.">
+  <meta property="og:image" content="https://harionresearch.co.in/assets/logo.png">
+  <meta property="og:url" content="https://harionresearch.co.in/methodology/">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Research &amp; Scanner Methodology | Harion Research">
+  <meta name="twitter:description" content="How Harion Research analyses companies and how the Research Scanner computes study metrics.">
+  <link rel="icon" href="/assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Harion Research", "description": "Harion Research is a financial education and research platform.", "url": "https://harionresearch.co.in", "logo": "https://harionresearch.co.in/assets/logo.png", "telephone": "+91-7067000393", "email": "info@harionresearch.co.in", "address": {"@type": "PostalAddress", "streetAddress": "3rd Floor, Silver Sanchora, R.N.T. Marg", "addressLocality": "Indore", "addressRegion": "Madhya Pradesh", "postalCode": "452001", "addressCountry": "IN"}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://harionresearch.co.in/"}, {"@type": "ListItem", "position": 2, "name": "Methodology", "item": "https://harionresearch.co.in/methodology/"}]}]</script>
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header"><div class="w bar"><a class="logo-link" href="/"><picture><source srcset="/assets/logo.webp" type="image/webp"><img src="/assets/logo.png" alt="Harion Research" width="130" height="46"></picture></a><input type="checkbox" id="nav-toggle" class="nav-toggle-input"><label for="nav-toggle" class="burger" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</label><nav class="site-nav" aria-label="Primary navigation"><ul class="nav-links"><li><a href="/equity-research-internship/">Internship</a></li><li><a href="/screener/">Screener</a></li><li><a href="/careers/">Careers</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li></ul><div class="nav-actions"><a class="btn btn-sm" href="https://classroom.harionresearch.co.in">Classroom &rarr;</a></div></nav></div></header>
+
+  <main id="main-content">
+    <section class="alt compact">
+      <div class="w">
+        <span class="kicker">Documentation &amp; Analytical Standards</span>
+        <h1>Research &amp; Scanner Methodology</h1>
+        <p class="lede">How Harion Research structures company analysis and how the Market Analysis Learning Lab (Research Scanner) defines universes, price/volume observations, and fundamental financial statement filters.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="w with-toc">
+        <!-- Sticky Table of Contents -->
+        <aside class="sticky-box" aria-label="Table of contents">
+          <span class="kicker">Contents</span>
+          <ul class="spec-list" style="border-top:1px solid var(--border)">
+            <li><a href="#universe-and-data">1. Universe &amp; Data Sources</a></li>
+            <li><a href="#filter-families">2. Filter Families &amp; Definitions</a></li>
+            <li><a href="#fundamental-workflow">3. Fundamental Analysis Workflow</a></li>
+            <li><a href="#valuation-approach">4. Valuation Approach</a></li>
+            <li><a href="#limitations">5. Limitations &amp; Scope</a></li>
+          </ul>
+        </aside>
+
+        <!-- Article Body -->
+        <div>
+          <!-- 1. Universe and data sources -->
+          <div id="universe-and-data" style="margin-bottom:56px">
+            <span class="kicker">01 / Data Architecture</span>
+            <h2>Universe and data sources</h2>
+            <!-- OWNER: add specifics on exact data vendor / pipeline schedule if desired -->
+            <p>The Harion Research Scanner covers active Indian equities listed on the National Stock Exchange (NSE) and BSE (Bombay Stock Exchange). To allow structured comparisons across companies of comparable scale and liquidity, the universe is segmented into eight study groups: NIFTY 50, NIFTY 200, NIFTY 500, All NSE Stocks, BSE Large Cap, BSE Mid Cap, BSE Small Cap, and All BSE Stocks.</p>
+            <p>All price and volume series in the scanner are based on <strong>delayed End-of-Day (EOD)</strong> exchange data. Fundamental ratios and financial statement line items are derived from reported quarterly and annual corporate filings. Because corporate actions (splits, bonuses, rights issues, mergers) and accounting restatements can affect historical series, participants are trained to cross-check every screened observation against official exchange disclosures and annual reports before drawing analytical conclusions.</p>
+          </div>
+
+          <!-- 2. How each filter family works in words -->
+          <div id="filter-families" style="margin-bottom:56px">
+            <span class="kicker">02 / Screening Logic</span>
+            <h2>How each filter family works</h2>
+            <p>Screening is a method for reducing a universe of thousands of listed companies to a manageable cohort that shares specific observable characteristics. The Research Scanner groups filters into three families:</p>
+
+            <h3>A. Price structure filters</h3>
+            <p>Price filters measure where a stock trades relative to its own historical range (such as 52-week high/low proximity or multi-week consolidation ranges) and relative to standard moving averages (such as 20-day, 50-day, and 200-day simple or exponential averages). These observations help learners classify whether a security has been in a trending, sideways, or volatile regime over a chosen historical lookback window.</p>
+
+            <h3>B. Volume &amp; participation filters</h3>
+            <p>Volume filters compare daily traded turnover against rolling historical averages (e.g., 20-day average volume). Observing price changes alongside relative volume teaches students how institutional and market-wide participation differs between quiet consolidation periods and high-activity disclosures such as quarterly earnings releases.</p>
+
+            <h3>C. Fundamental financial statement filters</h3>
+            <p>Fundamental filters summarize reported balance-sheet, income-statement, and cash-flow relationships so analysts can compare operating economics across peers. Below are the fundamental and study metrics configured in the scanner:</p>
+
+            <div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">Study Metric / Filter</th><th scope="col">Category</th><th scope="col">Definition in Reported Filings</th></tr></thead><tbody><tr><td><strong>Price-to-Earnings (P/E)</strong></td><td><span class="tag">Valuation Multiples</span></td><td>Current share price divided by trailing twelve-month (TTM) earnings per share from reported financial statements.</td></tr><tr><td><strong>Price-to-Book (P/B)</strong></td><td><span class="tag">Valuation Multiples</span></td><td>Market capitalization relative to reported net book value (shareholders&#x27; equity) on the latest balance sheet.</td></tr><tr><td><strong>EV / EBITDA</strong></td><td><span class="tag">Valuation Multiples</span></td><td>Enterprise value (market cap plus total debt less cash) relative to operating earnings before interest, tax, depreciation and amortization.</td></tr><tr><td><strong>Return on Equity (ROE)</strong></td><td><span class="tag">Profitability &amp; Return Ratios</span></td><td>Net profit attributable to equity shareholders divided by average shareholders&#x27; equity over the reporting period.</td></tr><tr><td><strong>Return on Capital Employed (ROCE)</strong></td><td><span class="tag">Profitability &amp; Return Ratios</span></td><td>Operating profit (EBIT) divided by total capital employed (total assets minus current liabilities).</td></tr><tr><td><strong>Operating Profit Margin (OPM %)</strong></td><td><span class="tag">Profitability &amp; Return Ratios</span></td><td>Operating profit before interest and tax expressed as a percentage of reported revenue from operations.</td></tr><tr><td><strong>Debt-to-Equity Ratio (D/E)</strong></td><td><span class="tag">Leverage &amp; Solvency</span></td><td>Total borrowings (long-term plus short-term debt) divided by total shareholders&#x27; equity.</td></tr><tr><td><strong>Interest Coverage Ratio</strong></td><td><span class="tag">Leverage &amp; Solvency</span></td><td>Operating profit (EBIT) divided by annual finance costs, measuring buffer to service debt obligations.</td></tr><tr><td><strong>Revenue &amp; Profit CAGR (3Y / 5Y)</strong></td><td><span class="tag">Historical Growth</span></td><td>Compound annual growth rate of reported top-line revenue and net income across 3-year and 5-year historical windows.</td></tr><tr><td><strong>Relative Volume &amp; Delivery Participation</strong></td><td><span class="tag">Price &amp; Volume Structure</span></td><td>End-of-day traded volume compared against 20-day and 50-day historical averages across NSE and BSE universes.</td></tr></tbody></table></div>
+          </div>
+
+          <!-- 3. Fundamental analysis workflow -->
+          <div id="fundamental-workflow" style="margin-bottom:56px">
+            <span class="kicker">03 / Company Research Process</span>
+            <h2>Fundamental analysis workflow</h2>
+            <p>A screen never replaces reading the filings. In the <a href="/equity-research-internship/">Equity Research Internship Program</a>, once a company is shortlisted in the scanner, analysts follow a four-step fundamental workflow:</p>
+            <ol class="plain-list">
+              <li><strong>Business model &amp; unit economics:</strong> Identify what the company manufactures or provides, revenue breakdown by segment and geography, customer concentration, and raw-material or employee cost structure from the Annual Report and Management Discussion &amp; Analysis (MD&amp;A).</li>
+              <li><strong>Accounting quality &amp; cash conversion:</strong> Compare cumulative EBITDA and Net Profit over 5–10 years against cumulative Cash Flow from Operations (CFO). Examine receivable days, inventory days, related-party transactions, auditor remarks, and contingent liabilities.</li>
+              <li><strong>Capital allocation track record:</strong> Study how management has deployed incremental capital—organic capex, working capital, debt reduction, acquisitions, or dividends—and whether incremental Return on Capital Employed (ROCE) exceeds the cost of capital.</li>
+              <li><strong>Sector &amp; competitive benchmarking:</strong> Compare margins, asset turnover, and leverage against 3–5 listed domestic peers to understand whether performance is driven by company-specific execution or an industry-wide cycle.</li>
+            </ol>
+          </div>
+
+          <!-- 4. Valuation approach -->
+          <div id="valuation-approach" style="margin-bottom:56px">
+            <span class="kicker">04 / Valuation Discipline</span>
+            <h2>Valuation approach</h2>
+            <!-- OWNER: add specifics on preferred valuation templates if desired -->
+            <p>We teach valuation as an exercise in making assumptions explicit, not as a formula for generating a "target price". Interns study two complementary lenses:</p>
+            <ul class="plain-list">
+              <li><strong>Intrinsic cash-flow logic (DCF sensitivity):</strong> Projecting free cash flow to the firm (FCFF) or equity (FCFE) across explicit operating scenarios (base, conservative, stress) to see what revenue growth and operating margin assumptions are implied by the current market capitalization.</li>
+              <li><strong>Relative multiple context:</strong> Comparing P/E, P/B, and EV/EBITDA across a peer group and against the company's own 5-year and 10-year historical median multiples, adjusted for differences in ROE, ROCE, leverage, and earnings cyclicality.</li>
+            </ul>
+            <p>In all Harion learning reports, valuation sections conclude by stating the sensitivity of estimates to key variables (discount rate, terminal growth, margin normalization) rather than issuing buy, sell, or hold ratings.</p>
+          </div>
+
+          <!-- 5. Limitations and what the scanner is not -->
+          <div id="limitations">
+            <span class="kicker">05 / Boundaries &amp; Risk Disclosure</span>
+            <h2>Limitations and what the scanner is not</h2>
+            <p>Every quantitative and fundamental tool has structural limitations that analysts must keep in view:</p>
+            <ul class="plain-list">
+              <li><strong>Not an advisory or signal engine:</strong> The Research Scanner does not predict future stock prices, generate buy/sell calls, or rank "top stocks".</li>
+              <li><strong>Backward-looking accounting data:</strong> Reported financial ratios reflect past fiscal periods. An industry downturn, regulatory change, or balance-sheet event occurring after the latest filing date will not appear in trailing ratios until reported.</li>
+              <li><strong>Accounting heterogeneity:</strong> Different sectors (for example, banking and NBFCs versus manufacturing) use distinct financial statement formats; ratios such as EV/EBITDA or Debt-to-Equity are not meaningful for banks and financial institutions.</li>
+              <li><strong>Data latency and reporting errors:</strong> Automated feeds can misclassify one-time exceptional items or corporate actions. Always verify numbers against audited company filings on NSE/BSE.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cross-promotion strip -->
+    <div class="cross-promo-strip">
+      <div class="w cross-promo-inner">
+        <span>Want to learn to use this tool like an analyst?</span>
+        <a class="mono" href="/equity-research-internship/?utm_source=harion_site&amp;utm_medium=web&amp;utm_campaign=cross_promo_methodology" data-event="click_cross_promo">See the Equity Research Internship &rarr;</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="w"><div class="footer-grid"><div class="footer-col"><span class="footer-col-title">Harion Research</span><p>Harion Research is a financial education and research platform.</p><p>3rd Floor, Silver Sanchora, R.N.T. Marg, Indore, Madhya Pradesh 452001<br>+91-7067000393<br><a href="mailto:info@harionresearch.co.in" style="color:#D1D5DB">info@harionresearch.co.in</a></p></div><div class="footer-col"><span class="footer-col-title">Research &amp; Tools</span><ul class="footer-links"><li><a href="/screener/">Market Analysis Learning Lab</a></li><li><a href="https://learninglab.streamlit.app/" data-event="click_open_scanner">Open the Research Scanner</a></li><li><a href="/methodology/">Methodology</a></li><li><a href="/research/">Educational Research Reports</a></li><li><a href="https://classroom.harionresearch.co.in">Harion Classroom</a></li></ul></div><div class="footer-col"><span class="footer-col-title">Programs</span><ul class="footer-links"><li><a href="/equity-research-internship/">Equity Research Internship Program</a></li><li><a href="/other-programs/#portfolio-manager">Portfolio Manager Program</a></li><li><a href="/other-programs/#nism-series-viii">NISM Series VIII Preparation</a></li><li><a href="/equity-research-internship/#join-the-lab">Join the Lab</a></li></ul></div><div class="footer-col"><span class="footer-col-title">Company &amp; Policies</span><ul class="footer-links"><li><a href="/about/">About</a></li><li><a href="/careers/">Careers in Finance Guide</a></li><li><a href="/blog/">Blog &amp; Guides</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/contact/">Contact</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms/">Terms of Service</a></li><li><a href="/refund-policy/">Refund Policy</a></li></ul></div></div><div class="footer-legal"><p>Harion Research is a financial education and research platform. We do not provide investment advisory, portfolio management, trade execution, or trading recommendations. All tools, content, webinars, and programs are intended solely for educational, research, and informational purposes and should not be construed as financial advice or used for investment decision-making. Data is delayed and may contain errors.</p><p>&copy; 2026 Harion Research. Udyam Registration: <span class="mono">UDYAM-MP-22-0035155</span></p></div></div></footer>
+  <script src="/assets/site.js" defer></script>
+</body>
+</html>
+

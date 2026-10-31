@@ -1,0 +1,90 @@
+{
+  "entity": {
+    "name": "Harion Research",
+    "udyam": "UDYAM-MP-22-0035155",
+    "email": "info@harionresearch.co.in",
+    "phone": "+91-7067000393",
+    "address": "3rd Floor, Silver Sanchora, R.N.T. Marg, Indore, Madhya Pradesh 452001"
+  },
+  "grievance_officer": {
+    "name": "Abhilash Bhoyar",
+    "email": "info@harionresearch.co.in"
+  },
+  "program": {
+    "name": "Equity Research Internship Program",
+    "price": "Free to enroll (Certificate ₹500 optional)",
+    "duration": "60 days",
+    "format": "40 self-paced modules + weekly live mentor review session",
+    "certificate": "Optional verified certificate (₹500)",
+    "enroll_url": "https://forms.gle/W7Z35ztDgFDvcWj87"
+  },
+  "screener": {
+    "url": "https://learninglab.streamlit.app/",
+    "universe_size": "NSE & BSE (8 Universes)",
+    "fundamental_data_source": "Reported corporate filings and delayed End-of-Day (EOD) exchange data, updated daily after market close",
+    "fundamental_filters": [
+      {
+        "name": "Price-to-Earnings (P/E)",
+        "category": "Valuation Multiples",
+        "definition": "Current share price divided by trailing twelve-month (TTM) earnings per share from reported financial statements."
+      },
+      {
+        "name": "Price-to-Book (P/B)",
+        "category": "Valuation Multiples",
+        "definition": "Market capitalization relative to reported net book value (shareholders' equity) on the latest balance sheet."
+      },
+      {
+        "name": "EV / EBITDA",
+        "category": "Valuation Multiples",
+        "definition": "Enterprise value (market cap plus total debt less cash) relative to operating earnings before interest, tax, depreciation and amortization."
+      },
+      {
+        "name": "Return on Equity (ROE)",
+        "category": "Profitability & Return Ratios",
+        "definition": "Net profit attributable to equity shareholders divided by average shareholders' equity over the reporting period."
+      },
+      {
+        "name": "Return on Capital Employed (ROCE)",
+        "category": "Profitability & Return Ratios",
+        "definition": "Operating profit (EBIT) divided by total capital employed (total assets minus current liabilities)."
+      },
+      {
+        "name": "Operating Profit Margin (OPM %)",
+        "category": "Profitability & Return Ratios",
+        "definition": "Operating profit before interest and tax expressed as a percentage of reported revenue from operations."
+      },
+      {
+        "name": "Debt-to-Equity Ratio (D/E)",
+        "category": "Leverage & Solvency",
+        "definition": "Total borrowings (long-term plus short-term debt) divided by total shareholders' equity."
+      },
+      {
+        "name": "Interest Coverage Ratio",
+        "category": "Leverage & Solvency",
+        "definition": "Operating profit (EBIT) divided by annual finance costs, measuring buffer to service debt obligations."
+      },
+      {
+        "name": "Revenue & Profit CAGR (3Y / 5Y)",
+        "category": "Historical Growth",
+        "definition": "Compound annual growth rate of reported top-line revenue and net income across 3-year and 5-year historical windows."
+      },
+      {
+        "name": "Relative Volume & Delivery Participation",
+        "category": "Price & Volume Structure",
+        "definition": "End-of-day traded volume compared against 20-day and 50-day historical averages across NSE and BSE universes."
+      }
+    ]
+  },
+  "stats": {
+    "reports_published": "3 Case Studies",
+    "cohorts_run": "40 Lessons"
+  },
+  "claims": {
+    "verified": false,
+    "source_note": ""
+  },
+  "analytics": {
+    "provider": "",
+    "id": ""
+  }
+}

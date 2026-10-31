@@ -1,0 +1,22 @@
+{
+  "entries": [
+    {
+      "version": "v2.3",
+      "date": "2026-10-18",
+      "title": "Fundamental Ratio & Valuation Study Lenses Added",
+      "summary": "Added educational screening filters for trailing P/E, P/B, EV/EBITDA, ROE, ROCE, Operating Margin, and Debt-to-Equity alongside historical price and volume observation modules."
+    },
+    {
+      "version": "v2.1",
+      "date": "2026-08-24",
+      "title": "Expanded NSE & BSE Market Universe Segmentation",
+      "summary": "Added structured universe selectors for NIFTY 50, NIFTY 200, NIFTY 500, All NSE Stocks, and BSE Large Cap, Mid Cap, and Small Cap segments on delayed End-of-Day data."
+    },
+    {
+      "version": "v2.0",
+      "date": "2026-06-12",
+      "title": "Market Structure & Multi-Factor Observation Tables",
+      "summary": "Introduced rule-based multi-factor case-study tables combining moving-average alignment, relative strength observation, and historical volatility ranges."
+    }
+  ]
+}

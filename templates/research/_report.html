@@ -1,0 +1,87 @@
+<!-- OWNER: confirm SEBI Research Analyst registration position with a compliance professional before publishing stock-specific views -->
+<!-- OWNER: review for accuracy -->
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{REPORT_SEO_TITLE}}</title>
+  <meta name="description" content="{{REPORT_META_DESC}}">
+  <link rel="canonical" href="https://harionresearch.co.in/research/{{REPORT_SLUG}}/">
+  <meta property="og:title" content="{{REPORT_SEO_TITLE}}">
+  <meta property="og:description" content="{{REPORT_META_DESC}}">
+  <meta property="og:image" content="https://harionresearch.co.in/assets/logo.png">
+  <meta property="og:url" content="https://harionresearch.co.in/research/{{REPORT_SLUG}}/">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{REPORT_TITLE}} | Harion Research">
+  <meta name="twitter:description" content="{{REPORT_SUMMARY}}">
+  <link rel="icon" href="/assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">{{REPORT_SCHEMA}}</script>
+  {{ANALYTICS_SCRIPT}}
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  {{HEADER}}
+
+  <main id="main-content">
+    <article>
+      <section class="alt compact">
+        <div class="w narrow">
+          <p class="mono muted" style="font-size:0.75rem;margin-bottom:12px">
+            <a href="/research/">Research</a> / Educational Case Study &middot; Learning Report
+          </p>
+          <span class="tag tag-teal" style="margin-bottom:16px">{{REPORT_TAG}}</span>
+          <h1>{{REPORT_TITLE}}</h1>
+          <p class="lede">{{REPORT_SUMMARY}}</p>
+          <ul class="spec-list" style="margin-top:24px">
+            <li><span>Document Classification</span><strong>Educational case study / learning report (mentor-reviewed)</strong></li>
+            <li><span>Author</span><strong>{{REPORT_AUTHOR}}</strong></li>
+            <li><span>Published Date</span><strong>{{REPORT_DATE}}</strong></li>
+            <li><span>Positions Disclosed</span><strong>{{REPORT_POSITIONS}}</strong></li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="w narrow">
+          <div class="notice-banner" role="note">
+            <strong>Educational Notice:</strong> This report is prepared solely as an academic and analytical case study demonstrating financial research methodology. It contains no target price, no buy/sell/hold rating, and is not investment advice.
+          </div>
+
+          {{REPORT_BODY_SECTIONS}}
+
+          <div class="card" style="margin-top:48px;background:var(--bg)">
+            <span class="kicker">Where this fits in the Harion Internship</span>
+            <h3>Learn to research and write reports like this</h3>
+            <p>In the <a href="/equity-research-internship/">Equity Research Internship Program</a> ({{PROGRAM_DURATION}}, {{PROGRAM_PRICE}}), participants use the Harion Research Scanner to shortlist a listed company, spread its financial statements, and author a complete research report with weekly mentor feedback.</p>
+            <div class="btn-row">
+              <a class="btn" href="/equity-research-internship/" data-event="click_view_internship">View the Internship Program</a>
+              <a class="btn o" href="{{SCREENER_URL}}" data-event="click_open_scanner">Open the Research Scanner</a>
+            </div>
+          </div>
+
+          <div class="notice-banner" style="margin-top:32px;margin-bottom:0">
+            <strong>Research Disclaimer:</strong> {{DISCLAIMER}}
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- Cross-promotion strip -->
+    <div class="cross-promo-strip">
+      <div class="w cross-promo-inner">
+        <span>See the tools you will train on.</span>
+        <a class="mono" href="{{SCREENER_URL}}?utm_source=harion_site&amp;utm_medium=web&amp;utm_campaign=cross_promo_report" data-event="click_cross_promo">Open the Research Scanner &rarr;</a>
+      </div>
+    </div>
+  </main>
+
+  {{FOOTER}}
+  <script src="/assets/site.js" defer></script>
+</body>
+</html>
