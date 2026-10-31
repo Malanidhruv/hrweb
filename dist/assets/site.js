@@ -48,26 +48,29 @@
     }
   });
 
-  // Contact form basic client-side validation, honeypot check & mailto fallback
+  // Contact form: formats enquiry and sends directly to WhatsApp (+91-7067000393)
   var form = document.querySelector('form[data-contact-form]');
   if (form) {
     form.addEventListener('submit', function (e) {
+      e.preventDefault();
       var hp = form.querySelector('input[name="botcheck"]');
-      if (hp && hp.value) {
-        e.preventDefault();
+      if (hp && (hp.checked || hp.value)) {
         return;
       }
-      var action = form.getAttribute('action') || '';
-      var hasKey = form.querySelector('input[name="access_key"]');
-      if (action.indexOf('web3forms.com') !== -1 && !hasKey) {
-        e.preventDefault();
-        var name = (form.querySelector('[name="name"]') || {}).value || '';
-        var email = (form.querySelector('[name="email"]') || {}).value || '';
-        var subject = (form.querySelector('[name="subject"]') || {}).value || 'Website Enquiry';
-        var message = (form.querySelector('[name="message"]') || {}).value || '';
-        var body = 'Name: ' + name + '\nEmail: ' + email + '\n\n' + message;
-        window.location.href = 'mailto:info@harionresearch.co.in?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-      }
+      var name = ((form.querySelector('[name="name"]') || {}).value || '').trim();
+      var email = ((form.querySelector('[name="email"]') || {}).value || '').trim();
+      var subject = ((form.querySelector('[name="subject"]') || {}).value || 'Website Enquiry').trim();
+      var message = ((form.querySelector('[name="message"]') || {}).value || '').trim();
+
+      var waText =
+        '*New Website Enquiry — Harion Research*\n\n' +
+        '*Name:* ' + name + '\n' +
+        '*Email:* ' + email + '\n' +
+        '*Topic:* ' + subject + '\n\n' +
+        '*Message:*\n' + message;
+
+      var waUrl = 'https://wa.me/917067000393?text=' + encodeURIComponent(waText);
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
     });
   }
 })();
