@@ -90,6 +90,7 @@ def render_analytics(site: dict) -> str:
 
 def render_header(site: dict, active_path: str = "/") -> str:
     nav_items = [
+        ("/", "Home"),
         ("/equity-research-internship/", "Internship"),
         ("/screener/", "Screener"),
         ("/careers/", "Careers"),
@@ -98,7 +99,10 @@ def render_header(site: dict, active_path: str = "/") -> str:
     ]
     links_html = []
     for href, label in nav_items:
-        is_active = active_path == href or (href != "/" and active_path.startswith(href))
+        if href == "/":
+            is_active = active_path == "/"
+        else:
+            is_active = active_path == href or (href != "/" and active_path.startswith(href))
         current = ' aria-current="page"' if is_active else ""
         links_html.append(f'<li><a href="{href}"{current}>{esc(label)}</a></li>')
 
