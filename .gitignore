@@ -1,10 +1,58 @@
-# Python & OS artifacts
+# Python artifacts
 __pycache__/
 *.py[cod]
 *$py.class
-.DS_Store
-Thumbs.db
+*.pyd
+*.pyo
+.Python
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+parts/
+var/
+sdist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets, Keys, Environment variables
 .env
+.env.*
+*.key
+*.pem
+*.crt
+*.pfx
+*.token
+credentials.json
+secrets.json
+
+# Operating System artifacts
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# IDE & Editor configurations
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
 
+# Logs & scratch
+*.log
+scratch/
+scripts/security_audit.py
