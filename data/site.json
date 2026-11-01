@@ -84,7 +84,7 @@
     "source_note": ""
   },
   "analytics": {
-    "provider": "",
-    "id": ""
+    "provider": "ga4",
+    "id": "G-BQ5B9Z33RF"
   }
 }
