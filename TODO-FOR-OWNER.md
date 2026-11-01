@@ -20,7 +20,7 @@ Review and confirm each item below in `data/site.json`, `data/research.json`, an
 
 - [ ] **4. PhonePe Payment Gateway Alignment**
   - Verify that the entity name (`Harion Research`), Udyam registration (`UDYAM-MP-22-0035155`), domain (`harionresearch.co.in`), and checkout line item (`Harion Equity Research Internship Program: online training, 60 days`) match your approved PhonePe merchant profile.
-  - When ready to switch the Internship **Enroll** button from the Google Form (`https://forms.gle/W7Z35ztDgFDvcWj87`) to `api.harionresearch.co.in/pay`, update `program.enroll_url` in `data/site.json` (all enroll buttons carry `data-enroll="equity-research-internship"`).
+  - When ready to switch the Internship **Enroll** button from the Google Form (`https://forms.gle/uPVBmUGSE6gzcrkb8`) to `api.harionresearch.co.in/pay`, update `program.enroll_url` in `data/site.json` (all enroll buttons carry `data-enroll="equity-research-internship"`).
 
 - [ ] **5. Fundamental Filters & Data Source (`data/site.json` -> `screener`)**
   - `screener.fundamental_filters` is currently populated with 10 standard fundamental and structure study metrics (`P/E`, `P/B`, `EV/EBITDA`, `ROE`, `ROCE`, `OPM %`, `Debt-to-Equity`, `Interest Coverage`, `3Y/5Y CAGR`, `Relative Volume`), and `screener.fundamental_data_source` describes delayed EOD and reported corporate filings.
