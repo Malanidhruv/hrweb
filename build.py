@@ -533,9 +533,9 @@ def build() -> None:
                 },
                 "offers": {
                     "@type": "Offer",
-                    "price": "500",
+                    "price": "0",
                     "priceCurrency": "INR",
-                    "description": tbc(prog.get("price", "")),
+                    "description": "Free to enroll and train; ₹500 certificate fee payable only after completing the internship.",
                 },
             },
             {
@@ -552,10 +552,10 @@ def build() -> None:
                     },
                     {
                         "@type": "Question",
-                        "name": "What are the duration and program fee?",
+                        "name": "Do I pay anything in advance to enroll? When is the ₹500 certificate fee payable?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": f"The program duration is {tbc(prog.get('duration', ''))}. The fee structure is {tbc(prog.get('price', ''))}.",
+                            "text": f"No advance payment is required to enroll or train. The {tbc(prog.get('duration', ''))} training, 40 classroom lessons, analytical software, and weekly mentor reviews are completely free. A ₹500 certificate fee is payable only after completing the internship, supporting Harion Research's mission and day-to-day operations.",
                         },
                     },
                     {
