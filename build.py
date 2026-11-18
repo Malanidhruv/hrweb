@@ -633,7 +633,7 @@ def build() -> None:
         "{{PROGRAM_PRICE}}": tbc(prog.get("price", "")),
         "{{PROGRAM_FORMAT}}": tbc(prog.get("format", "")),
         "{{PROGRAM_CERTIFICATE}}": tbc(prog.get("certificate", "")),
-        "{{PROGRAM_ENROLL_URL}}": esc(prog.get("enroll_url", "https://forms.gle/uPVBmUGSE6gzcrkb8")),
+        "{{PROGRAM_ENROLL_URL}}": esc(prog.get("enroll_url", "https://forms.gle/bt7WPEJRcoiRo8HT8")),
         "{{HERO_GRID_CLASS}}": hero_grid_class,
         "{{HERO_DECOR}}": hero_decor,
         "{{HERO_RIGHT}}": hero_right,
