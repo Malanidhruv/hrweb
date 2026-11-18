@@ -535,7 +535,7 @@ def build() -> None:
                     "@type": "Offer",
                     "price": "0",
                     "priceCurrency": "INR",
-                    "description": "Free to enroll and train; ₹500 certificate fee payable only after completing the internship.",
+                    "description": "₹500 certificate fee on completion of the program.",
                 },
             },
             {
@@ -552,10 +552,10 @@ def build() -> None:
                     },
                     {
                         "@type": "Question",
-                        "name": "Do I pay anything in advance to enroll? When is the ₹500 certificate fee payable?",
+                        "name": "What does the program cost?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": f"No advance payment is required to enroll or train. The {tbc(prog.get('duration', ''))} training, 40 classroom lessons, analytical software, and weekly mentor reviews are completely free. A ₹500 certificate fee is payable only after completing the internship, supporting Harion Research's mission and day-to-day operations.",
+                            "text": "The training carries no fee. Participants pay ₹500 for their verified certificate on completing the program.",
                         },
                     },
                     {
