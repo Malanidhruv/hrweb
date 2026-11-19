@@ -91,8 +91,8 @@ def render_analytics(site: dict) -> str:
 def render_header(site: dict, active_path: str = "/") -> str:
     nav_items = [
         ("/", "Home"),
-        ("/equity-research-internship/", "Internship"),
         ("/screener/", "Screener"),
+        ("/equity-research-internship/", "Internship"),
         ("/blog/", "Blog"),
         ("/about/", "About"),
         ("/contact/", "Contact"),
